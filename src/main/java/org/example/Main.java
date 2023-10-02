@@ -2,15 +2,21 @@ package org.example;
 
 import org.example.zoo.Animal;
 import org.example.zoo.Owner;
+import org.example.zoo.Species;
 
 public class Main {
     public static void main(String[] args) {
+        Species husky = new Species("husky",500);
+        Species tiger = new Species("tiger", 1000);
+        Species elephant = new Species("elephant", 1000);
+        Species monkey = new Species("monkey", 300);
 
         //task 1
-        Animal animal1 = new Animal("a1", "Bello", "husky", 3);
-        Animal animal2 = new Animal("b2", "Tiggy", "tiger", 5);
-        Animal animal3 = new Animal("c3", "Ellie", "elephant", 10);
-        Animal animal4 = new Animal("d4", "Momo", "monkey", 3);
+        Animal animal1 = new Animal("a1", "Bello", husky, 3);
+        Animal animal2 = new Animal("b2", "Tiggy", tiger, 5);
+        Animal animal3 = new Animal("c3", "Ellie", elephant, 10);
+        Animal animal4 = new Animal("d4", "Momo", monkey, 3);
+        Animal animal6 = new Animal("e5", "Moma", monkey, 2);
         Animal animal5 = animal4;
         System.out.println(animal1);
         System.out.println(animal2);
