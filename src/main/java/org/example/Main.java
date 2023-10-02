@@ -39,6 +39,10 @@ public class Main {
         System.out.println(owner2);
         System.out.println(owner3);
 
+
+        Animal animal78 = animal12.withAge(14);
+        System.out.println(animal78);
+
     }
 
 
