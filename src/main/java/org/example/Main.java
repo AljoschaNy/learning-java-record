@@ -24,7 +24,7 @@ public class Main {
         Animal animal31 = new Animal("c4", "Ello", elephant, 15);
         Animal animal4 = new Animal("d4", "Momo", monkey, 3);
         Animal animal6 = new Animal("e5", "Moma", monkey, 2);
-        Animal animal5 = animal4;
+        Animal animal5 = new Animal("d4", "Momo", monkey, 3);
 
         List<Animal> allAnimals = new ArrayList<>();
         allAnimals.add(animal1); //500

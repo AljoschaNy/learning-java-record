@@ -11,7 +11,6 @@ public record Zoo(
 
         for(Animal animal : allAnimals) {
             totalAmount += animal.animalSpecies().fodderAmountPerDay();
-            //break;
         }
 
         return totalAmount;
