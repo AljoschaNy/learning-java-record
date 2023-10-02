@@ -13,8 +13,11 @@ public class Main {
 
         //task 1
         Animal animal1 = new Animal("a1", "Bello", husky, 3);
+        Animal animal12 = new Animal("a2", "Bella", husky, 5);
         Animal animal2 = new Animal("b2", "Tiggy", tiger, 5);
+        Animal animal21 = new Animal("b3", "Tigto", tiger, 4);
         Animal animal3 = new Animal("c3", "Ellie", elephant, 10);
+        Animal animal31 = new Animal("c4", "Ello", elephant, 15);
         Animal animal4 = new Animal("d4", "Momo", monkey, 3);
         Animal animal6 = new Animal("e5", "Moma", monkey, 2);
         Animal animal5 = animal4;
