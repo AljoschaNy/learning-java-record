@@ -3,6 +3,10 @@ package org.example;
 import org.example.zoo.Animal;
 import org.example.zoo.Owner;
 import org.example.zoo.Species;
+import org.example.zoo.Zoo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +25,17 @@ public class Main {
         Animal animal4 = new Animal("d4", "Momo", monkey, 3);
         Animal animal6 = new Animal("e5", "Moma", monkey, 2);
         Animal animal5 = animal4;
+
+        List<Animal> allAnimals = new ArrayList<>();
+        allAnimals.add(animal1); //500
+        allAnimals.add(animal12); //500
+        allAnimals.add(animal2); //1000
+        allAnimals.add(animal3); //1000
+        allAnimals.add(animal4); // 300
+
+        Zoo myZoo = new Zoo(allAnimals);
+
+
         System.out.println(animal1);
         System.out.println(animal2);
         System.out.println(animal3);
@@ -42,6 +57,8 @@ public class Main {
 
         Animal animal78 = animal12.withAge(14);
         System.out.println(animal78);
+
+        System.out.println(myZoo.getTotalAmountOfFodderPerDay());
 
     }
 
